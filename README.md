@@ -15,6 +15,9 @@ uses it internally. Asyncio is also tested with uvloop, if available.
 pip3 install git+https://github.com/Tronic/async-http-benchmark.git
 ````
 
+Install [wrk](https://github.com/wg/wrk/wiki/Installing-Wrk-on-Linux) for fully
+automatic benchmarking, or run some other tool while ahbench is waiting.
+
 Optional deps: `pip3 install trio uvloop`
 
 Run all tests: `python3 -m ahbench` or
