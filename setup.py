@@ -15,7 +15,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    install_requires = ["wrk"],
+    python_requires='>=3.7',
     extras_require = {
         "trio": ["trio>=0.12"],
         "uvloop": ["uvloop"],

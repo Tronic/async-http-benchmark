@@ -1,4 +1,3 @@
-wrk
 
 [trio]
 trio>=0.12
