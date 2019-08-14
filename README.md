@@ -12,7 +12,7 @@ uses it internally. Asyncio is also tested with uvloop, if available.
 ## Install & run
 
 ````
-pip install git+https://github.com/Tronic/async-http-benchmark.git
+pip3 install git+https://github.com/Tronic/async-http-benchmark.git
 ````
 
 Optional deps: `pip3 install trio uvloop`
