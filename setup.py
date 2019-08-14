@@ -18,7 +18,7 @@ setuptools.setup(
     python_requires='>=3.7',
     extras_require = {
         "trio": ["trio>=0.12"],
-        "uvloop": ["uvloop"],
+        "uvloop": ["uvloop>=0.13"],
     },
     include_package_data = True,
 )
