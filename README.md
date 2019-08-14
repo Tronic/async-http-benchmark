@@ -17,10 +17,8 @@ pip3 install git+https://github.com/Tronic/async-http-benchmark.git
 
 Optional deps: `pip3 install trio uvloop`
 
-You only need `ahbench.py`, no installation.
-
-Run all tests: `python3 -m ahbench`
-Run only matching tests: `python3 -m ahbench uv` (or any other searchword)
+Run all tests: `python3 -m ahbench` or
+run only matching tests: `python3 -m ahbench uv` (or any other searchword).
 
 ## Bugs
 
