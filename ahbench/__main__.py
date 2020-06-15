@@ -148,7 +148,7 @@ def main():
             ip, port = server_sock.getsockname()
             url = f'http://{ip}:{port}/'
             workers = 8
-            command = 'wrk', '-t8', '-c100', url
+            command = 'wrk', '--latency', '-t8', '-c100', url
             print(f"{test} >>> {' '.join(command)}")
             for i in range(workers):
                 pid = os.fork()
