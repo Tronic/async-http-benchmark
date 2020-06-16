@@ -148,7 +148,7 @@ def main():
             ip, port = server_sock.getsockname()
             url = f'http://{ip}:{port}/'
             workers = 8
-            command = 'wrk', '-t8', '-c100', url
+            command = 'wrk', '--latency', '-t8', '-c100', url
             print(f"{test} >>> {' '.join(command)}")
             for i in range(workers):
                 pid = os.fork()
@@ -160,6 +160,8 @@ def main():
                         if i == 0: sys.stderr.write(f"{e!r}\n")
                     finally: return  # End worker process!
         try:
+            print("Sleeping 1s to let the server start...")
+            time.sleep(1)
             subprocess.call(command)
         except Exception as e:
             print(f"Test failed: {e}")
